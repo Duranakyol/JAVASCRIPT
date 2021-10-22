@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LIGHT</title>
+    <style>
+        button {
+            padding: 10px 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="openLight();">OPEN LIGHT</button>
+    <img id="on/off" src="off.jpeg" style="width: 260px;">
+    <button onclick="closeLight();">CLOSE LIGHT</button>
+
+    <script>
+        function openLight() {
+            document.getElementById("on/off").src = "on.png";
+        }
+
+        function closeLight() {
+            document.getElementById("on/off").src = "off.jpeg";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ALANLARI BOS GECME</title>
+    <style type="text/css">
+
+    </style>
+    <script type="text/javascript">
+        function kontrol() {
+            var adal = document.getElementById("ad").value;
+            var emailal = document.getElementById("email").value;
+            var sifreal = document.getElementById("sifre").value;
+            var tcnoal = document.getElementById("tcno").value;
+
+            document.getElementById("aduyari").innerHTML = "";
+            document.getElementById("emailuyari").innerHTML = "";
+            document.getElementById("sifreuyari").innerHTML = "";
+            document.getElementById("tcnouyari").innerHTML = "";
+
+            if (adal == "") {
+                document.getElementById("aduyari").innerHTML = "Bu Alani bos birakamazsiniz!";
+                document.getElementById("aduyari").style.color = "#f00";
+            }
+            if (emailal == "") {
+                document.getElementById("emailuyari").innerHTML = "Bu Alani bos birakamazsiniz!";
+                document.getElementById("emailuyari").style.color = "#f00";
+            }
+            if (sifreal == "") {
+                document.getElementById("sifreuyari").innerHTML = "Bu Alani bos birakamazsiniz!";
+                document.getElementById("sifreuyari").style.color = "#f00";
+            }
+            if (tcnoal == "") {
+                document.getElementById("tcnouyari").innerHTML = "Bu Alani bos birakamazsiniz!";
+                document.getElementById("tcnouyari").style.color = "#f00";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td width="150">ADI SOYADI</td>
+                <td width="150"><input type="text" id="ad"></td>
+                <td width="350"><span id="aduyari"></span></td>
+            </tr>
+            <tr>
+                <td>E-MAIL</td>
+                <td><input type="text" id="email"></td>
+                <td><span id="emailuyari"></span></td>
+            </tr>
+            <tr>
+                <td>SIFRE</td>
+                <td><input type="password" id="sifre"></td>
+                <td><span id="sifreuyari"></span></td>
+            </tr>
+            <tr>
+                <td>TC NO</td>
+                <td><input type="text" id="tcno"></td>
+                <td><span id="tcnouyari"></span></td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button" id="button" value="GÖNDER" onclick="kontrol()"></td>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

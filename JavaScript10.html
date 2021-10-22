@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ONMOUSEOVER</title>
+    <script type="text/javascript">
+        function odaklan(x) { //Burdaki x yani bolge demektir. bolge yazmadikta x koyduk.
+            document.getElementById(x).style.backgroundColor = "yellow";
+            document.getElementById(x).style.color = "red";
+        }
+
+        function terket(x) { //Burdaki x yani bolge demektir. bolge yazmadikta x koyduk. Burda da tekrar x kullanilabilir.
+            document.getElementById(x).style.backgroundColor = "white";
+            document.getElementById(x).style.color = "black";
+        }
+    </script>
+</head>
+
+<body>
+    <form action="" method="get">
+        <textarea id="bolge" name="" cols="60" rows="10" onfocus="odaklan(this.id)" onblur="terket(this.id)"></textarea></br>
+        </br>
+        <input id="alan" type="text" onfocus="odaklan(this.id)" onblur="terket(this.id)">
+    </form>
+</body>
+
+</html>

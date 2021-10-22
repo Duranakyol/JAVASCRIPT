@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>setTimeout</title>
+    <script type="text/javascript">
+        var pencere;
+
+        function pencereac() {
+            pencere = window.open("", "pencere", "width=400, height=300, top=200, left=200, scrollbars = yes");
+            pencere.document.write("<html><head><title>Yeni Pencere </title></head><body bgColor='#ffffc1' text='#ce44300'>");
+            pencere.document.write("<center><h3>BU PENCERE 3 SANIYE SONRA OTOMATIK OLARAK KAPANIR</h3><center>");
+            pencere.document("</body></html>");
+            setTimeout
+        }
+
+        function pencerekapat() {
+            pencere.close();
+        }
+    </script>
+</head>
+
+<body>
+    <a href="#" onclick="pencereac()">PENCEREYI AC</a></br>
+</body>
+
+</html>

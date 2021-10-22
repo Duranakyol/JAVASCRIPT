@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ONMOUSEOVER</title>
+    <script type="text/javascript">
+        function uzerinegelince() {
+            document.getElementById("foto").src = "foto2.jpg";
+        }
+
+        function uzerindenayrilinca() {
+            document.getElementById("foto").src = "foto1.jpg";
+        }
+    </script>
+
+    </style>
+</head>
+
+<body>
+    <img id="foto" src="foto1.jpg" width="400" onmouseover="uzerinegelince()" onmouseout="uzerindenayrilinca()" />
+</body>
+
+</html>

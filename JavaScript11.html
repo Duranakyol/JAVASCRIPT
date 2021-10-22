@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIFRE YANLIS</title>
+    <style type="text/css">
+        input {
+            width: 150px;
+            height: 25px;
+            border: 1px solid #06c;
+        }
+    </style>
+    <script type="text/javascript">
+        function kontrol() {
+            var sifreal = document.getElementById("sifre").value;
+            document.getElementById("uyari").innerHTML = "";
+            if (sifreal == 12345) {
+                document.getElementById("sifre").style.backgroundColor = "#0f0";
+            } else {
+                document.getElementById("uyari").innerHTML = "Sifre hatali!!!";
+                document.getElementById("uyari").style.color = "#f00";
+                document.getElementById("sifre").style.backgroundColor = "#f00";
+                document.getElementById("sifre").style.color = "#fff";
+                document.getElementById("sifre").style.border = "1px solid #a00";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form method="GET">
+        <table>
+            <tr>
+                <td width="150" height="30">KULLANICI ADI </td>
+                <td><input id="kullanici" width="150" type="text"> </td>
+                <td width="350"></td>
+            </tr>
+            <tr>
+                <td height="30">SIFRE</td>
+                <td><input id="sifre" type="password" onchange="kontrol()"></td>
+                <td><span id="uyari"></span></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
